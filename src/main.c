@@ -1,15 +1,7 @@
-/**
-  ******************************************************************************
-  * @file    main.c
-  * @author  Ac6
-  * @version V1.0
-  * @date    01-December-2013
-  * @brief   Default main function.
-  ******************************************************************************
-*/
-
-
 #include "stm32f4xx.h"
+#include "helper_stm32.h"
+#include "timer.h"
+#include "gpio.h"
 			
 
 int myVar = 0;
@@ -17,6 +9,8 @@ int myVar = 0;
 
 int main(void) {
 
-	myVar += 1;
+	HELPER_STM32_initSystemClocks();
+	GPIO_STM32_configure();
+	TIMER_STM32_configure();
 
 }
