@@ -1,5 +1,5 @@
 #include "stm32f4xx.h"
-#include "timer.h"
+#include "timer_stm32.h"
 
 
 void TIMER_STM32_configure(void) {

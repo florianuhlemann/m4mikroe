@@ -1,7 +1,7 @@
 #include "stm32f4xx.h"
 #include "helper_stm32.h"
-#include "timer.h"
-#include "gpio.h"
+#include "gpio_stm32.h"
+#include "timer_stm32.h"
 			
 
 int myVar = 0;
